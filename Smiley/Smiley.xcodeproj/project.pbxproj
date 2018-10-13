@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5864D7FA2171D9EB0030F1DC /* testfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5864D7F92171D9EB0030F1DC /* testfile.swift */; };
 		587A9D7C1FF1476F00CE78D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A9D7B1FF1476F00CE78D4 /* AppDelegate.swift */; };
 		587A9D7E1FF1476F00CE78D4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587A9D7D1FF1476F00CE78D4 /* MainVC.swift */; };
 		587A9D811FF1476F00CE78D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587A9D7F1FF1476F00CE78D4 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5864D7F92171D9EB0030F1DC /* testfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testfile.swift; sourceTree = "<group>"; };
 		587A9D781FF1476F00CE78D4 /* Smiley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smiley.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587A9D7B1FF1476F00CE78D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		587A9D7D1FF1476F00CE78D4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				587A9D871FF1476F00CE78D4 /* LaunchScreen.storyboard */,
 				587A9D8A1FF1476F00CE78D4 /* Info.plist */,
 				587A9D821FF1476F00CE78D4 /* Smiley.xcdatamodeld */,
+				5864D7F92171D9EB0030F1DC /* testfile.swift */,
 			);
 			path = Smiley;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587A9D7E1FF1476F00CE78D4 /* MainVC.swift in Sources */,
+				5864D7FA2171D9EB0030F1DC /* testfile.swift in Sources */,
 				587A9D7C1FF1476F00CE78D4 /* AppDelegate.swift in Sources */,
 				587A9D841FF1476F00CE78D4 /* Smiley.xcdatamodeld in Sources */,
 				587A9D911FF14C5200CE78D4 /* AddTaskVC.swift in Sources */,
