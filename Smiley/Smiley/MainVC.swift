@@ -10,25 +10,22 @@ import UIKit
 
 class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
-    
     @IBOutlet weak var tableView: UITableView!
     
     var tasks : [Task] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-      
-        
+
       tableView.delegate = self
       tableView.dataSource = self
-        
-        grabData()
+      grabData()
+      print("Hi")
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         grabData()
-        
         tableView.reloadData()
     }
     
@@ -36,17 +33,11 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         return tasks.count
     }
       func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       let cell = UITableViewCell()
-        
-        
+        let cell = UITableViewCell()
         let task = tasks[indexPath.row]
-        
         if task.name != nil{
-            
             cell.textLabel?.text = "😀\(String(describing: task.name!))☺️"
-
         }
-      
         return cell
     }
     
@@ -73,8 +64,6 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         let guest = UIApplication.shared.delegate as! AppDelegate
         
         let context = guest.persistentContainer.viewContext
-        
-        
         do
         {
             tasks = try context.fetch(Task.fetchRequest())
