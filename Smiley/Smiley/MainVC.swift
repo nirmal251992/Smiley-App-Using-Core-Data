@@ -19,9 +19,7 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
 
       tableView.delegate = self
       tableView.dataSource = self
-      grabData()
-      print("Hi")
-        
+      grabData()        
     }
     
     override func viewWillAppear(_ animated: Bool) {
