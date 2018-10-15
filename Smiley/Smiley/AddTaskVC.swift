@@ -14,8 +14,6 @@ class AddTaskVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        print("Hi")
         // Do any additional setup after loading the view.
     }
     
