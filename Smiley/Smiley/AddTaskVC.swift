@@ -11,13 +11,15 @@ class AddTaskVC: UIViewController {
 
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var needSmiley: UISwitch!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        print("Hi")
         // Do any additional setup after loading the view.
     }
     
     @IBAction func saveTapped(_ sender: Any) {
-        
         let guest = UIApplication.shared.delegate as! AppDelegate
         let context = guest.persistentContainer.viewContext
         let task = Task(context: context)
