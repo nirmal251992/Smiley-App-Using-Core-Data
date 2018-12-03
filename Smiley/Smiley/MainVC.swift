@@ -19,6 +19,7 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
       super.viewDidLoad()
       tableView.delegate = self
       tableView.dataSource = self
+      print("Hi")
     }
     
     override func viewWillAppear(_ animated: Bool) {
