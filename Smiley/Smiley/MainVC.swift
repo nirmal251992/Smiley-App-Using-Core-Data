@@ -13,15 +13,15 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
     
     var tasks : [Task] = []
-
+    var imageView = UIImageView()
     override func viewDidLoad() {
-        super.viewDidLoad()
-
+      super.viewDidLoad()
       tableView.delegate = self
       tableView.dataSource = self
       grabData()
         
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         grabData()
         tableView.reloadData()
