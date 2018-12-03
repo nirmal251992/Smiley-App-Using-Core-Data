@@ -14,12 +14,14 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     var tasks : [Task] = []
     var imageView = UIImageView()
+    var imageView1 = UIImageView()
     override func viewDidLoad() {
       super.viewDidLoad()
       tableView.delegate = self
       tableView.dataSource = self
       grabData()
-        
+        grabData()
+        grabData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
