@@ -47,7 +47,7 @@ class MainVC: UIViewController,UITableViewDataSource,UITableViewDelegate {
         if editingStyle == .delete{
             
             let task = tasks[indexPath.row]
-            
+            print(task)
             context.delete(task)
             guest.saveContext()
             grabData()
